@@ -1,0 +1,4 @@
+GOOFYCLEANER FOR LINUX INSTRUCTIONS:
+place "SystemCleaner.sh" into your ~/Home folder
+open a terminal window and run "bash SystemCleaner.sh"
+sit back and enjoy a faster system as goofycleaner removes unneeded files
